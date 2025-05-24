@@ -1,0 +1,132 @@
+/* RESET DASAR */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #2b2e4a 0%, #53354a 100%);
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  color: #f0ece2;
+}
+
+/* ===== Shop Information Header ===== */
+.shop-info {
+  text-align: center;
+  margin: 2rem 0;
+}
+.shop-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #e0ece4;
+}
+.shop-info p {
+  font-size: 1.2rem;
+  color: #f5f3f5;
+  text-decoration: underline;
+}
+.shop-info .num {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f5f3f5;
+}
+
+/* ===== Wrapper & Containers ===== */
+.wrapper {
+  position: relative;
+  width: 80vw;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.container {
+  background: #3f3d56;
+  border-radius: 0.5rem;
+  border-bottom: 8px solid #ffcb77;
+  width: 28vmin;
+  height: 28vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+.container i {
+  font-size: 2.5rem;
+  color: #ff6b6b;
+  margin-bottom: 0.5rem;
+}
+.container .num {
+  font-size: 2rem;
+  color: #e3e0e1;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.container .text {
+  font-size: 0.715rem;
+  color: #c0b6e4;
+  text-align: center;
+}
+
+/* ===== Footer ===== */
+.footer {
+  width: 100vw;
+  background: #3f3d56;
+  color: #f0ece2;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-family: "Poppins", sans-serif;
+}
+.footer__copyright {
+  font-size: 0.9rem;
+}
+.footer__author {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.footer__social {
+  margin-top: 0.5rem;
+}
+.footer__social a {
+  margin: 0 0.5rem;
+  color: #f0ece2;
+  font-size: 1.2rem;
+  transition: color 0.2s ease;
+}
+.footer__social a:hover {
+  color: #ff6b6b;
+}
+
+/* ===== Media Queries ===== */
+@media (max-width: 768px) {
+  .container {
+    width: 45%;
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    height: auto;
+    padding: 0.8rem;
+  }
+  .shop-info h1 {
+    font-size: 2rem;
+  }
+  .shop-info p {
+    font-size: 1rem;
+  }
+}
